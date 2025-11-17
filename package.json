@@ -1,17 +1,21 @@
 {
   "name": "clone",
   "private": true,
-  "homepage": "https://reetchouksey.github.io/clone",
+  "homepage": "http://reetchouksey.github.io/clone",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "predeploy": "npm run build",
+    "predeploy": "npm run build && cp -f dist/index.html dist/404.html",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "@mui/icons-material": "^7.3.5",
+    "@mui/material": "^7.3.5",
     "firebase": "^12.5.0",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",

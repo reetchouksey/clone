@@ -177,32 +177,61 @@
 
 
 
-@media (min-width: 1440px) {
+@media (min-width: 1600px) {
+  .hero {
+    height: 100vh;
+  }
   .hero-caption {
-    max-width: 800px;
+    max-width: 850px;
+    font-size: 1.3rem;
+  }
+  .card {
+    width: 260px;
+  }
+  .card img {
+    height: 160px;
+  }
+}
+
+
+@media (min-width: 1440px) and (max-width: 1599px) {
+  .hero {
+    height: 95vh;
+  }
+  .hero-caption {
     font-size: 1.2rem;
   }
 }
 
 
-@media (max-width: 1439px) {
+@media (max-width: 1439px) and (min-width: 1025px) {
   .hero {
     height: 90vh;
   }
   .card {
     width: 200px;
   }
+  .card img {
+    height: 130px;
+  }
 }
 
 
-@media (max-width: 1024px) {
+@media (max-width: 1024px) and (min-width: 768px) {
   .hero {
     height: 80vh;
   }
   .hero-caption {
     font-size: 1rem;
     width: 80%;
+    bottom: 12%;
   }
+
+  .hero-btns .btn {
+    padding: 10px 24px;
+    font-size: 14px;
+  }
+
   .card {
     width: 180px;
   }
@@ -211,54 +240,29 @@
   }
 }
 
-@media (max-width: 768px) {
+
+@media (max-width: 767px) and (min-width: 600px) {
   .hero {
-    height: 70vh;
+    height: 72vh;
   }
   .hero-caption {
+    font-size: 0.95rem;
+    width: 88%;
     bottom: 10%;
-    font-size: 0.9rem;
   }
+}
   .hero-btns .btn {
-    padding: 10px 22px;
+    padding: 9px 20px;
     font-size: 13px;
   }
+
   .featured-cards h2 {
-    font-size: 1.5rem;
+    font-size: 1.45rem;
   }
-}
 
-
-@media (max-width: 600px) {
-  .hero {
-    height: 60vh;
-  }
-  .hero-caption {
-    width: 90%;
-    bottom: 8%;
-    font-size: 0.85rem;
-  }
-  .hero-btns .btn {
-    font-size: 11px;
-    padding: 8px 16px;
-  }
   .card {
-    width: 150px;
+    width: 160px;
   }
   .card img {
-    height: 100px;
+    height: 110px;
   }
-}
-
-@media (max-width: 400px) {
-  .hero {
-    height: 55vh;
-  }
-  .hero-caption {
-    font-size: 0.8rem;
-  }
-  .hero-btns .btn {
-    font-size: 10px;
-    padding: 6px 12px;
-  }
-}
