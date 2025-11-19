@@ -5,6 +5,7 @@ import { Routes, Route, useNavigate, useLocation } from "react-router-dom";
 import Home from "./Pages/Home/Home";
 import Login from "./Pages/Login/Login";
 import Player from "./Pages/Player/Player";
+import Search from "./Pages/Search/Search";
 import { onAuthStateChanged } from "firebase/auth";
 import { auth } from "./Firebase";
 import { ToastContainer } from "react-toastify";
@@ -38,7 +39,8 @@ const App = () => {
       <ToastContainer theme="dark" />
 
       <Routes>
-        <Route path="/" element={<Login />} />     {/* Default page = Login */}
+        <Route path="/search" element={<Search />} />
+        <Route path="/" element={<Login />} /> {/* Default page = Login */}
         <Route path="/login" element={<Login />} />
         <Route path="/home" element={<Home />} />
         <Route path="/player/:id" element={<Player />} />

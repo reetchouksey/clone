@@ -1,11 +1,12 @@
 {
   "name": "clone",
   "private": true,
-  "homepage": "http://reetchouksey.github.io/clone",
+  "homepage": "https://reetchouksey.github.io/clone",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "start": "vite",
     "build": "vite build",
     "preview": "vite preview",
     "predeploy": "npm run build && cp -f dist/index.html dist/404.html",
@@ -20,6 +21,7 @@
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "react-router-dom": "^7.9.5",
+    "react-scripts": "^5.0.1",
     "react-toastify": "^11.0.5"
   },
   "devDependencies": {
